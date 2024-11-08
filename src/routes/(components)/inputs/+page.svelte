@@ -16,10 +16,10 @@
 
 			<DemoComponents.Wrapper class="[&>[data-preview-code]]:px-1.5 [&>[data-preview-code]]:py-2">
 				{#each data.inputComponents as component (component.id)}
-					<DemoComponents.Demo {component} />
+					<DemoComponents.Demo {component} allcomponents={data.inputComponents} />
 				{/each}
 				{#each data.textareaComponents as component (component.id)}
-					<DemoComponents.Demo {component} />
+					<DemoComponents.Demo {component} allcomponents={data.textareaComponents}/>
 				{/each}
 			</DemoComponents.Wrapper>
 		</div>

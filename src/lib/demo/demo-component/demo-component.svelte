@@ -5,12 +5,15 @@
 	import ViewToggleButton from './demo-view-toggle-button.svelte';
 
 	import CodePreview from '$lib/demo/code-preview.svelte';
+	import DemoDialog from './demo-dialog.svelte';
 
 	let {
 		component,
+		allcomponents,
 		class: className
 	}: {
 		component: ComponentRender;
+		allcomponents: ComponentRender[];
 		class?: string;
 	} = $props();
 
@@ -30,6 +33,7 @@
 				'lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100 '
 		)}
 	>
+		<DemoDialog {component} {allcomponents} />
 		<ViewToggleButton {showCode} onToggle={toggleView} />
 		<div class="h-6 w-px bg-border"></div>
 		<CopyButton code={source} />

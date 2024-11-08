@@ -21,6 +21,9 @@ const config = {
 			$lib: './src/lib',
 			$assets: './src/lib/assets'
 		}
+	},
+	vitePlugin:{
+		inspector:true
 	}
 };
 

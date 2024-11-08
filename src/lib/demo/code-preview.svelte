@@ -3,7 +3,9 @@
 </script>
 
 <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-{@html code}
+<div class="no-scrollbar w-fit overflow-auto">
+	{@html code}
+</div>
 
 <style lang="postcss">
 	:global(pre.shiki) {

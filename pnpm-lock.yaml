@@ -17,33 +17,18 @@ importers:
       '@internationalized/date':
         specifier: ^3.5.6
         version: 3.5.6
-      bits-ui:
-        specifier: 1.0.0-next.31
-        version: 1.0.0-next.31(svelte@5.1.2)
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       hastscript:
         specifier: ^9.0.0
         version: 9.0.0
       inputmask:
         specifier: ^5.0.7
         version: 5.0.9
-      lucide-svelte:
-        specifier: ^0.453.0
-        version: 0.453.0(svelte@5.1.2)
       mode-watcher:
         specifier: ^0.4.1
         version: 0.4.1(svelte@5.1.2)
       svelte-tel-input:
         specifier: ^3.5.1
         version: 3.5.1(svelte@5.1.2)
-      tailwind-merge:
-        specifier: ^2.5.4
-        version: 2.5.4
-      tailwind-variants:
-        specifier: ^0.2.1
-        version: 0.2.1(tailwindcss@3.4.14)
       wrangler:
         specifier: ^3.83.0
         version: 3.83.0(@cloudflare/workers-types@4.20241022.0)
@@ -72,6 +57,12 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
+      bits-ui:
+        specifier: 1.0.0-next.46
+        version: 1.0.0-next.46(svelte@5.1.2)
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       eslint:
         specifier: ^9.0.0
         version: 9.13.0(jiti@1.21.6)
@@ -84,6 +75,9 @@ importers:
       globals:
         specifier: ^15.11.0
         version: 15.11.0
+      lucide-svelte:
+        specifier: ^0.453.0
+        version: 0.453.0(svelte@5.1.2)
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -102,6 +96,12 @@ importers:
       svelte-check:
         specifier: ^4.0.5
         version: 4.0.5(svelte@5.1.2)(typescript@5.6.3)
+      tailwind-merge:
+        specifier: ^2.5.4
+        version: 2.5.4
+      tailwind-variants:
+        specifier: ^0.2.1
+        version: 0.2.1(tailwindcss@3.4.14)
       tailwindcss:
         specifier: ^3.4.14
         version: 3.4.14
@@ -1001,8 +1001,8 @@ packages:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
-  bits-ui@1.0.0-next.31:
-    resolution: {integrity: sha512-x6Y8pjypBYSUe5Fc2LjLfmDgZjtBXL/tH90NBbbP+zsWBeo27SAcECommOJZeTnC4gyDOib7/eWKARoPyE4Ohg==}
+  bits-ui@1.0.0-next.46:
+    resolution: {integrity: sha512-ATEyY4z3amOA5C3E7GsiV5H5kPpaNldrclDfDI0iUY6NfNJwNEv44crYlLNEyU8rBkSOGpQfonpwMp/mhtYoDQ==}
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
       svelte: ^5.0.0-next.1
@@ -1233,6 +1233,9 @@ packages:
 
   esm-env@1.0.0:
     resolution: {integrity: sha512-Cf6VksWPsTuW01vU9Mk/3vRue91Zevka5SjyNf3nEpokFRuqt/KjUQoGAwq9qMmhpLTHmXzSIrFRw8zxWzmFBA==}
+
+  esm-env@1.1.4:
+    resolution: {integrity: sha512-oO82nKPHKkzIj/hbtuDYy/JHqBHFlMIW36SDiPCVsj87ntDLcWN+sJ1erdVryd4NxODacFTsdrIE3b7IamqbOg==}
 
   espree@10.2.0:
     resolution: {integrity: sha512-upbkBJbckcCNBDBDXEbuhjbP68n+scUd3k/U2EkyM9nw+I/jPiL4cLF/Al06CF96wRltFda16sxDFrxsI1v0/g==}
@@ -3043,12 +3046,12 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
-  bits-ui@1.0.0-next.31(svelte@5.1.2):
+  bits-ui@1.0.0-next.46(svelte@5.1.2):
     dependencies:
       '@floating-ui/core': 1.6.8
       '@floating-ui/dom': 1.6.11
       '@internationalized/date': 3.5.6
-      esm-env: 1.0.0
+      esm-env: 1.1.4
       runed: 0.15.3(svelte@5.1.2)
       svelte: 5.1.2
       svelte-toolbelt: 0.4.4(svelte@5.1.2)
@@ -3329,6 +3332,8 @@ snapshots:
       - supports-color
 
   esm-env@1.0.0: {}
+
+  esm-env@1.1.4: {}
 
   espree@10.2.0:
     dependencies:
@@ -3913,7 +3918,7 @@ snapshots:
 
   runed@0.15.3(svelte@5.1.2):
     dependencies:
-      esm-env: 1.0.0
+      esm-env: 1.1.4
       svelte: 5.1.2
 
   sade@1.8.1:
